@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Nav from "@/components/Nav";
-import Title from "@/components/title";
+import Title from "@/components/Title";
 
 export default function Home() {
 
