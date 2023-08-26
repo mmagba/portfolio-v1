@@ -2,26 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.title__word {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.custom__container {
+  width: 85%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+nav {
+  backdrop-filter: saturate(180%) blur(5px);
+  background: hsla(0, 0%, 0%, 0.8);
+}
+
+.thinGrayLine {
+  width: 85%;
+  height: 0.1em;
+  background: hsl(0, 0%, 50%);
+  transform: scaleY(0.5);
+  margin: 0 auto;
+  transform: translateY(-40px);
+  z-index: 100;
+}
+
+.gray__bg {
+  background-color: rgb(17, 17, 17);
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 1rem;
+  column-gap: 6rem;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+i {
+
+  font-size: 4rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
