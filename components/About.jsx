@@ -15,7 +15,7 @@ const About = () => {
             });
         });
 
-        const hiddenElements = document.querySelectorAll(".custom__hidden");
+        const hiddenElements = document.querySelectorAll(".custom__hidden_left");
 
         hiddenElements.forEach((element) => {
             observer.observe(element);
@@ -37,7 +37,7 @@ const About = () => {
         <section className='gray__bg py-6'>
             <div id='about' className='custom__container text-white flex flex-col md:flex-row justify-between'> 
 
-                <div className='md:w-1/2 text-xl custom__hidden late mt-8'>
+                <div className='md:w-1/2 text-xl custom__hidden_left late mt-8'>
                     <h2 className='text-white text-4xl mb-6'><span className='text-base'>01. </span>About</h2>
                     <p>Hi there! I'm Mahmoud, a web developer. (as you might have guessed with the title).</p>
                     <p className='mt-4'>I'm deeply passionate about transforming ideas into seamless digital experiences, specializing in crafting code that breathes life into your visions.</p>
@@ -47,7 +47,7 @@ const About = () => {
 
                 </div>
 
-                <div className="grid-container custom__hidden">
+                <div className="grid-container custom__hidden_left">
 
                     <div className="item">
                         <i className="devicon-html5-plain colored"></i>

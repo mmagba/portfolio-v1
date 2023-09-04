@@ -63,12 +63,20 @@ i {
   align-content: center;
 }
 
-.custom__hidden {
+.custom__hidden_left {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
+
+.custom__hidden_right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
 
 .show {
   opacity: 1;
@@ -96,4 +104,8 @@ i {
   width: 85%;
   margin: 5rem auto;
   overflow-x: hidden;
+}
+
+.bg-dark__Gray{
+  background-color: #0f0d0e;
 }
