@@ -1,21 +1,53 @@
-import React from 'react'
+'use client'
+
+import { useEffect } from "react";
+
+
 
 const About = () => {
-    return (
-        <section className='gray__bg'>
-            <div id='about' className='custom__container text-white py-6 flex flex-col md:flex-row justify-between'>
 
-                <div className='md:w-1/2 text-xl '>
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll(".custom__hidden");
+
+        hiddenElements.forEach((element) => {
+            observer.observe(element);
+        });
+
+        return () => {
+            hiddenElements.forEach((element) => {
+                observer.unobserve(element);
+            });
+        };
+    }, []);
+
+
+
+
+
+
+    return (
+        <section className='gray__bg py-6'>
+            <div id='about' className='custom__container text-white flex flex-col md:flex-row justify-between'> 
+
+                <div className='md:w-1/2 text-xl custom__hidden late mt-8'>
                     <h2 className='text-white text-4xl mb-6'><span className='text-base'>01. </span>About</h2>
-                    <p>Hi there! I'm Mahmoud, a web developer. (as you might have guessed with the title)</p>
+                    <p>Hi there! I'm Mahmoud, a web developer. (as you might have guessed with the title).</p>
                     <p className='mt-4'>I'm deeply passionate about transforming ideas into seamless digital experiences, specializing in crafting code that breathes life into your visions.</p>
-                    <p className='mt-4'>With a focus on time management and client satisfaction, I deliver results that surpass deadlines and expectations. I bring technical expertise, creative problem-solving, and a client-centered approach to every project. Let's work together to create exceptional web experiences
+                    <p className='mt-4'>With a focus on client satisfaction, I bring technical expertise, creative problem-solving, and a client-centered approach to every project. Let's work together to create exceptional web experiences.
                     </p>
 
 
                 </div>
 
-                <div className="grid-container">
+                <div className="grid-container custom__hidden">
 
                     <div className="item">
                         <i className="devicon-html5-plain colored"></i>

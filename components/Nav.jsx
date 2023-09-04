@@ -11,7 +11,7 @@ const Nav = () => {
 
 
     return (
-        <nav className='fixed  py-4 text-yellow-100 w-full text-xl'>
+        <nav className='fixed  py-4 text-yellow-100 w-full text-xl z-50'>
             <div className='flex gap-8 custom__container'>
                 <a onClick={() => smoothScroll('#about')} className='cursor-pointer'>About</a>
                 <a onClick={() => smoothScroll('#projects')} className='cursor-pointer'>Projects</a>

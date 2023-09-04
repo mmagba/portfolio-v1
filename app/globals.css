@@ -19,6 +19,7 @@
 nav {
   backdrop-filter: saturate(180%) blur(5px);
   background: hsla(0, 0%, 0%, 0.8);
+  border-bottom: 1px solid rgb(26, 26, 26);
 }
 
 .thinGrayLine {
@@ -32,7 +33,7 @@ nav {
 }
 
 .gray__bg {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(25, 25, 25);
 }
 
 
@@ -60,4 +61,39 @@ i {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.custom__hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.late {
+  transition-delay: 400ms;
+}
+
+.card {
+  transition: all 0.75s;
+  box-shadow: 0 0 15px 2px #48abe0;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid rgb(65, 65, 65);
+  width: 85%;
+  margin: 5rem auto;
+  overflow-x: hidden;
 }

@@ -11,10 +11,10 @@ export default function RootLayout({ children }) {
 
     <html lang="en" className='w-screen overflow-x-hidden'>
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
       </head>
-      <body className='bg-black w-screen'>{children}</body>
+      <body className='bg-black w-screen text-white'>{children}</body>
     </html>
   )
 }
