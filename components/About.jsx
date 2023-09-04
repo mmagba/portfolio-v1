@@ -34,8 +34,8 @@ const About = () => {
 
 
     return (
-        <section className='gray__bg py-6'>
-            <div id='about' className='custom__container text-white flex flex-col md:flex-row justify-between'> 
+        <section className='gray__bg'>
+            <div id='about' className='custom__container text-white flex flex-col md:flex-row justify-between py-12'> 
 
                 <div className='md:w-1/2 text-xl custom__hidden_left late mt-8'>
                     <h2 className='text-white text-4xl mb-6'><span className='text-base'>01. </span>About</h2>

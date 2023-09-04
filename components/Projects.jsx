@@ -3,9 +3,9 @@ import Project from './Project'
 
 const Projects = () => {
   return (
-    <section id='projects' >
+    <section id='projects' className='py-12' >
       <div className="custom__container">
-        <h2 className='text-4xl my-4 pt-6'><span className='text-base'>02. </span>Projects</h2>
+        <h2 className='text-4xl my-4'><span className='text-base'>02. </span>Projects</h2>
       </div>
 
       <Project
