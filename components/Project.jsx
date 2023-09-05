@@ -43,24 +43,25 @@ const Project = (props) => {
 
 
     return (
-        <div className={`flex gap-16 my-24 justify-center items-center lg:flex-row flex-col ${props.imageOnRight === true ? ' lg:flex-row-reverse' : ''}`} >
+        <div className={`flex gap-16 px-2 my-24 justify-center items-center lg:flex-row flex-col ${props.imageOnRight === true ? ' lg:flex-row-reverse' : ''}`} >
 
 
-            <div className={`rounded-lg relative w-4/5 md:w-3/5 lg:w-2/5 h-96 ${props.imageOnRight === true ? 'custom__hidden_left' : 'custom__hidden_right '}`}>
 
 
-                <Image
-                    src={props.imageSrc}
-                    alt={`screenshot of my project named ${props.name}`}
-                    fill={true}
-                    loading='eager'
-                    className='rounded-lg'
-                />
 
-            </div>
+            <Image
+                src={props.imageSrc}
+                alt={`screenshot of my project named ${props.name}`}
+                width={600}
+                height={400}
+                loading='eager'
+                className={`rounded-lg ${props.imageOnRight === true ? 'custom__hidden_left' : 'custom__hidden_right '}`}
+            />
 
 
-            <div className={`text-center lg:text-left md:w-3/5 lg:w-2/5 flex flex-col gap-8 justify-between py-6 ${props.imageOnRight === true ? 'custom__hidden_left late' : 'custom__hidden_right late'}`}>
+
+
+            <div className={`text-center lg:text-left md:w-4/5 lg:w-2/5 flex flex-col gap-8 justify-between py-6 ${props.imageOnRight === true ? 'custom__hidden_left late' : 'custom__hidden_right late'}`}>
                 <h3 className='text-5xl font-bold'>{props.name}</h3>
                 <div className='text-gray-400 text-2xl'>
                     {props.children}

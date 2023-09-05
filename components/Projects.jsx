@@ -12,7 +12,7 @@ const Projects = () => {
         name='Manage Landing Page'
         githubLink='https://github.com/mmagba/manage-landing-page'
         liveLink='https://manage-landing-page-one-pink.vercel.app/'
-        imageSrc='/screenSizes.png'
+        imageSrc='/manageScreenShot.png'
         imageOnRight={false}
       >
         <p className='mb-7'>This is a Frontend Mentor challange (the original designs can be found <a className='underline' target="_blank" href="https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5">here</a>).</p>
