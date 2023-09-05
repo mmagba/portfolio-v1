@@ -38,7 +38,7 @@ export default function Title() {
     return (
         <>
             
-            <div className='flex flex-col justify-center items-center h-screen w-screen bg-black text-white text-4xl md:text-8xl lg:text-9xl text-left'>
+            <div className='flex flex-col justify-center items-center h-screen w-screen bg-black text-white text-6xl md:text-8xl lg:text-9xl text-left'>
 
                 <div>
                     <h1 data-value="MAHMOUD" onMouseOver={hackerEffect} className='hover:bg-white hover:text-black rounded-md title__word font-thin'>

@@ -35,10 +35,10 @@ const About = () => {
 
     return (
         <section className='gray__bg'>
-            <div id='about' className='custom__container text-white flex flex-col md:flex-row justify-between py-12'> 
+            <div id='about' className='custom__container text-white flex flex-col lg:flex-row justify-between py-12 gap-12'> 
 
-                <div className='md:w-1/2 text-xl custom__hidden_left late mt-8'>
-                    <h2 className='text-white text-4xl mb-6'><span className='text-base'>01. </span>About</h2>
+                <div className='lg:w-1/2 text-xl custom__hidden_left late mt-8 text-left'>
+                    <h2 className='text-white text-4xl mb-6 text-left'><span className='text-base'>01. </span>About</h2>
                     <p>Hi there! I'm Mahmoud, a web developer. (as you might have guessed with the title).</p>
                     <p className='mt-4'>I'm deeply passionate about transforming ideas into seamless digital experiences, specializing in crafting code that breathes life into your visions.</p>
                     <p className='mt-4'>With a focus on client satisfaction, I bring technical expertise, creative problem-solving, and a client-centered approach to every project. Let's work together to create exceptional web experiences.

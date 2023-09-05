@@ -4,7 +4,6 @@
 
 .title__word {
   font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
@@ -106,6 +105,28 @@ i {
   overflow-x: hidden;
 }
 
-.bg-dark__Gray{
+.bg-dark__Gray {
   background-color: #0f0d0e;
+}
+
+@media(max-width: 580px){
+  .title__word{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .grid-container{
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title__word {
+    font-size: clamp(3rem, 10vw, 10rem);
+  }
+}
+
+@media(max-width: 350px){
+  .title__word{
+    font-size: 3rem;
+  }
 }
